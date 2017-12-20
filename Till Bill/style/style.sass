@@ -1,0 +1,127 @@
+$BG_CH: #ffffff 
+$BR_CL: #c6c6c6
+
+
+
+
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+	
+.main
+	max-width: 1366px
+	margin: auto
+
+	header
+		display: flex
+		flex-flow: row
+		justify-content: space-between
+		height: 125px
+		background-color: $BG_CH 
+
+		.logo-header
+			width: 256px
+			height: 92px
+			position: absolute
+		.nav	
+			list-style: none
+			margin:
+				left: 205px
+				top: 27px
+
+			li
+				display: inline
+				padding: 
+					left: 25px
+
+				a	
+					cursor: pointer
+					position: relative
+					text-decoration: none
+					color: #070707
+					text-transform: uppercase
+					font:
+						size: 10px
+						weight: 400
+					line-height: 3px
+					letter-spacing: 1.1px
+					transition: .9s
+
+					&:hover
+						color: $BR_CL
+
+					&:after 
+						display: block
+						position: absolute
+						left: 0 
+						width: 0
+						height: 2px
+						background-color: $BR_CL
+						content: ""
+						transition: width 0.3s ease-out	
+
+					&:hover:after,
+					&:focus:after 
+						width: 100%		
+
+		.divider
+			width: 85px
+			height: 125px
+
+			.up
+				display: flex
+				flex-direction: row
+				align-items: center
+				width: 85px
+				height: 62px
+
+				.ic_search
+					width: 42px
+					height: 62px
+					display: flex
+					flex-direction: row
+					align-items: center
+					justify-content: center
+					border:
+						left: 1px solid $BR_CL
+						bottom: 1px solid $BR_CL
+					transition: .9s	
+
+					&:hover
+						background-color: $BR_CL	
+					 
+
+				.ic_menu
+					width: 42px
+					height: 62px
+					display: flex
+					flex-direction: row
+					align-items: center
+					justify-content: center
+					border:
+						right: 1px solid $BR_CL
+						left: 1px solid $BR_CL
+						bottom: 1px solid $BR_CL
+					transition: .9s	
+					&:hover
+						background-color: $BR_CL	
+
+			.ic_chat
+				width: 42px
+				height: 62px
+				margin-left: 42px
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				border:
+						right: 1px solid $BR_CL
+						left: 1px solid $BR_CL
+						bottom: 1px solid $BR_CL
+				transition: .9s		
+				&:hover
+					background-color: $BR_CL		
+
+

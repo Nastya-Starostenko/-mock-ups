@@ -1,0 +1,30 @@
+			a	
+			
+				cursor: pointer
+				position: relative
+				text-decoration: none
+				font:
+					size: 8px
+					weight: 400
+				text-transform: uppercase
+				color: $text-c
+				line-height: 3px
+				letter-spacing: 1.1px
+				transition: .9s
+				
+				&:hover
+					color: #a7b3b3
+
+				&:after 
+					display: block
+					position: absolute
+					left: 0 
+					width: 0
+					height: 2px
+					background-color: #a7b3b3
+					content: ""
+					transition: width 0.3s ease-out
+
+				&:hover:after,
+				&:focus:after 
+					width: 100%	

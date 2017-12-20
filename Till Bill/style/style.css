@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.main {
+  max-width: 1366px;
+  margin: auto; }
+  .main header {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    height: 125px;
+    background-color: #ffffff; }
+    .main header .logo-header {
+      width: 256px;
+      height: 92px;
+      position: absolute; }
+    .main header .nav {
+      list-style: none;
+      margin-left: 205px;
+      margin-top: 27px; }
+      .main header .nav li {
+        display: inline;
+        padding-left: 25px; }
+        .main header .nav li a {
+          cursor: pointer;
+          position: relative;
+          text-decoration: none;
+          color: #070707;
+          text-transform: uppercase;
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 3px;
+          letter-spacing: 1.1px;
+          transition: 0.9s; }
+          .main header .nav li a:hover {
+            color: #c6c6c6; }
+          .main header .nav li a:after {
+            display: block;
+            position: absolute;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #c6c6c6;
+            content: "";
+            transition: width 0.3s ease-out; }
+          .main header .nav li a:hover:after, .main header .nav li a:focus:after {
+            width: 100%; }
+    .main header .divider {
+      width: 85px;
+      height: 125px; }
+      .main header .divider .up {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 85px;
+        height: 62px; }
+        .main header .divider .up .ic_search {
+          width: 42px;
+          height: 62px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          border-left: 1px solid #c6c6c6;
+          border-bottom: 1px solid #c6c6c6;
+          transition: 0.9s; }
+          .main header .divider .up .ic_search:hover {
+            background-color: #c6c6c6; }
+        .main header .divider .up .ic_menu {
+          width: 42px;
+          height: 62px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          border-right: 1px solid #c6c6c6;
+          border-left: 1px solid #c6c6c6;
+          border-bottom: 1px solid #c6c6c6;
+          transition: 0.9s; }
+          .main header .divider .up .ic_menu:hover {
+            background-color: #c6c6c6; }
+      .main header .divider .ic_chat {
+        width: 42px;
+        height: 62px;
+        margin-left: 42px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        border-right: 1px solid #c6c6c6;
+        border-left: 1px solid #c6c6c6;
+        border-bottom: 1px solid #c6c6c6;
+        transition: 0.9s; }
+        .main header .divider .ic_chat:hover {
+          background-color: #c6c6c6; }
+
+/*# sourceMappingURL=style.css.map */
