@@ -125,5 +125,44 @@
     align-items: center;
     padding-right: 10px;
     float: left; }
+  .main .gadot-outer {
+    margin-top: 155px;
+    margin-left: 90px;
+    width: 219px;
+    height: 219px;
+    border: 2px solid #f4f5f5;
+    transform: rotate(45deg); }
+  .main .gadot-inner {
+    margin: 6px;
+    width: 203px;
+    height: 203px;
+    border: 2px solid #f4f5f5; }
+    .main .gadot-inner .gadot-div {
+      width: 53px;
+      height: 53px;
+      margin: 50px;
+      border-radius: 80%;
+      position: relative;
+      overflow: hidden;
+      transform: rotate(45deg);
+      border: 1px solid #f4f5f5; }
+      .main .gadot-inner .gadot-div:before {
+        content: "";
+        position: absolute;
+        width: 200%;
+        height: 200%;
+        top: -68%;
+        left: 0%;
+        z-index: -1;
+        background: url(../images/galgaddot.png) 0 0 no-repeat;
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-89deg);
+        -o-transform: rotate(-90deg);
+        transform: rotate(-90deg); }
+      .main .gadot-inner .gadot-div .line-gadot-div {
+        width: 145px;
+        height: 65px;
+        background-color: #f4f5f5; }
 
 /*# sourceMappingURL=style.css.map */
