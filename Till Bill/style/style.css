@@ -140,7 +140,7 @@
     .main .gadot-inner .gadot-div {
       width: 53px;
       height: 53px;
-      margin: 50px;
+      margin: 44px;
       border-radius: 80%;
       position: relative;
       overflow: hidden;
@@ -160,9 +160,19 @@
         -ms-transform: rotate(-89deg);
         -o-transform: rotate(-90deg);
         transform: rotate(-90deg); }
-      .main .gadot-inner .gadot-div .line-gadot-div {
-        width: 145px;
-        height: 65px;
-        background-color: #f4f5f5; }
+    .main .gadot-inner .line-gadot-div {
+      display: block;
+      width: 180px;
+      height: 2px;
+      margin-top: -40px;
+      margin-left: 10px;
+      transform: rotate(135deg);
+      background-color: #f4f5f5; }
+    .main .gadot-inner h2 {
+      color: #f4f5f5;
+      margin-top: -10px;
+      margin-left: 60px;
+      transform: rotate(-45deg);
+      font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */
