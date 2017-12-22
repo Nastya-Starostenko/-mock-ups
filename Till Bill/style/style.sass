@@ -1,9 +1,5 @@
 $BG_CH: #ffffff 
-$BR_CL: #c6c6c6
-
-
-
-
+$BR_CL: #a7b3b3
 
 *
 	margin: 0
@@ -15,26 +11,27 @@ $BR_CL: #c6c6c6
 	margin: auto
 
 	header
-		display: flex
-		flex-flow: row
-		justify-content: space-between
+		display: inline-flex
+		width: 1366px
 		height: 125px
-		background-color: $BG_CH 
+		background-color: $BG_CH
+		position: absolute	 
 
 		.logo-header
 			width: 256px
 			height: 92px
 			position: absolute
+			z-index: 50
 		.nav	
-			list-style: none
-			margin:
-				left: 205px
-				top: 27px
+			list-style: none 
+			padding:
+				left: 471px
+				top:  27px
+				right: 214px		
 
 			li
 				display: inline
-				padding: 
-					left: 25px
+				padding: 10px
 
 				a	
 					cursor: pointer
@@ -86,7 +83,7 @@ $BR_CL: #c6c6c6
 					justify-content: center
 					border:
 						left: 1px solid $BR_CL
-						bottom: 1px solid $BR_CL
+						// bottom: 1px solid $BR_CL
 					transition: .9s	
 
 					&:hover
@@ -103,7 +100,7 @@ $BR_CL: #c6c6c6
 					border:
 						right: 1px solid $BR_CL
 						left: 1px solid $BR_CL
-						bottom: 1px solid $BR_CL
+						// bottom: 1px solid $BR_CL
 					transition: .9s	
 					&:hover
 						background-color: $BR_CL	
@@ -117,6 +114,7 @@ $BR_CL: #c6c6c6
 				align-items: center
 				justify-content: center
 				border:
+						top: 1px solid $BR_CL
 						right: 1px solid $BR_CL
 						left: 1px solid $BR_CL
 						bottom: 1px solid $BR_CL
@@ -124,4 +122,36 @@ $BR_CL: #c6c6c6
 				&:hover
 					background-color: $BR_CL		
 
+	.slider
+		width: 1277px
+		height: 464px
+		margin:
+			top: 62px
+			right: 42px
+			left: 42px
+		padding-bottom: 40px 	
+		background-color: #a7b3b3
+		position: absolute
+		
+	.arrow-right
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		align-items: center 
+		padding-right: 10px
+		float: right
+		width: 42px
+		height: 461px
 
+	.arrow-right a
+		height: 100%
+
+	.arrow-left
+		width: 42px
+		height: 461px
+		display: flex
+		flex-direction: row
+		justify-content: flex-end
+		align-items: center 
+		padding-right: 10px
+		float: left
