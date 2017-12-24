@@ -1,6 +1,15 @@
 $BG_CH: #ffffff 
 $BR_CL: #a7b3b3
 
+$header-height: 125px
+$header-width: 1366px
+
+$logo-width: 256px
+$logo-height: 92px
+ 
+$slider-width: 1277px
+$slider-height: 464px
+
 *
 	margin: 0
 	padding: 0
@@ -9,17 +18,18 @@ $BR_CL: #a7b3b3
 .main
 	max-width: 1366px
 	margin: auto
+	margin-bottom: 42px
 
 	header
 		display: inline-flex
-		width: 1366px
-		height: 125px
+		width: $header-width
+		height: $header-height
 		background-color: $BG_CH
 		position: absolute	 
 
 		.logo-header
-			width: 256px
-			height: 92px
+			width: $logo-width
+			height: $logo-height
 			position: absolute
 			z-index: 50
 		.nav	
@@ -123,8 +133,9 @@ $BR_CL: #a7b3b3
 					background-color: $BR_CL		
 
 	.slider
-		width: 1277px
-		height: 464px
+
+		width: $slider-width
+		height: $slider-height
 		margin:
 			top: 62px
 			right: 42px
@@ -206,23 +217,57 @@ $BR_CL: #a7b3b3
 			transform: rotate(135deg)
 			background-color: #f4f5f5
 
-		h2
-			color: #f4f5f5
-			margin:
-				top: -13px
-				left: 65px
-			transform: rotate(-45deg)
-			font-size: 14px
+	.secondBlock
+		margin: auto
+		width: 1283px
+		height: 427px
 
-	.price1-outer
-		width: 100px
-		height: 100px
+		.SB_1
+			margin:  
+					top: ($slider-height + $header-height) - 63px
+			position: absolute
+			width: 425px 
+			height: 427px
+			background-color: #bababa
+
+		.SB_2
+			margin:
+				left:  425px
+				top: ($slider-height + $header-height) - 63px
+			position: absolute
+			width: 853px
+			height: 427px
+			background-color: #f6f3ec
+
+	.thirdBlock
+		display: flex
+		flex-direction: row
+		margin: auto
+		width: 1283px
+		height: 472px
+
+		.TB_1
+			margin:
+					top: 526px 
+			width: 852px 	
+			height: 472px
+			background-color: #756862				
+		.TB_2
+			margin:
+					top: 526px
+			width: 425px
+			height: 472px
+			background-color: #d3d1d2
+
+	.fourthBlock
 		margin:
-			top: -259px
-			left: 163px
-		background-color: #f4f5f5
-		transform: rotate(90deg)
-		border: 1px solid red
-	// .price2
-	// .price3
-	// .price4
+				left: 42px
+				top: 526px
+		width: 1277px	
+		height: 402px
+		background-color: #e7ecf0
+	.footer
+		margin-left: 42px
+		width: 1277px
+		height: 336px
+		background-color: red	 								
