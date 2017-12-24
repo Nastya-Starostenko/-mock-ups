@@ -170,7 +170,7 @@
       transform: rotate(135deg);
       background-color: #f4f5f5; }
   .main .secondBlock {
-    margin: auto;
+    margin-left: 42px;
     width: 1283px;
     height: 427px; }
     .main .secondBlock .SB_1 {
@@ -179,6 +179,13 @@
       width: 425px;
       height: 427px;
       background-color: #bababa; }
+      .main .secondBlock .SB_1 .call_to_action {
+        margin-top: 87.5px;
+        margin-left: 84px;
+        width: 260px;
+        height: 260px;
+        transform: rotate(45deg);
+        border: 2px solid #f4f5f5; }
     .main .secondBlock .SB_2 {
       margin-left: 425px;
       margin-top: 526px;
@@ -189,7 +196,8 @@
   .main .thirdBlock {
     display: flex;
     flex-direction: row;
-    margin: auto;
+    margin-left: 42px;
+    margin-right: 42px;
     width: 1283px;
     height: 472px; }
     .main .thirdBlock .TB_1 {
