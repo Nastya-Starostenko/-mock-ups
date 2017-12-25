@@ -186,13 +186,108 @@
         height: 260px;
         transform: rotate(45deg);
         border: 2px solid #f4f5f5; }
+        .main .secondBlock .SB_1 .call_to_action .image_call {
+          background-image: url(../images/call_to_action_1.png);
+          transform: rotate(-45deg);
+          margin-top: 20px;
+          margin-left: 18px;
+          width: 250px;
+          height: 248px; }
+          .main .secondBlock .SB_1 .call_to_action .image_call .head_call {
+            text-align: center; }
+            .main .secondBlock .SB_1 .call_to_action .image_call .head_call .up {
+              padding-top: 50px;
+              margin-bottom: 5px;
+              font-size: 16px;
+              color: #f4f5f5;
+              text-transform: uppercase; }
+            .main .secondBlock .SB_1 .call_to_action .image_call .head_call .down {
+              margin-bottom: 15px;
+              font-size: 16px;
+              color: #f4f5f5;
+              text-transform: uppercase; }
+            .main .secondBlock .SB_1 .call_to_action .image_call .head_call p {
+              font-size: 14px;
+              color: #f4f5f5; }
+            .main .secondBlock .SB_1 .call_to_action .image_call .head_call a {
+              cursor: pointer;
+              position: relative;
+              font-size: 14px;
+              font-weight: 400;
+              color: #f4f5f5;
+              text-decoration: none;
+              text-transform: uppercase;
+              transition: 0.9s;
+              line-height: 3px; }
+              .main .secondBlock .SB_1 .call_to_action .image_call .head_call a .start {
+                height: 10px;
+                width: 115px;
+                margin-left: 65px;
+                margin-top: 30px; }
+              .main .secondBlock .SB_1 .call_to_action .image_call .head_call a:hover {
+                color: #f4f5f5; }
+              .main .secondBlock .SB_1 .call_to_action .image_call .head_call a .start:hover {
+                color: #f4f5f5; }
+            .main .secondBlock .SB_1 .call_to_action .image_call .head_call:after {
+              margin-left: 65px;
+              display: block;
+              position: absolute;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: #f4f5f5;
+              content: "";
+              transition: width 0.3s ease-out; }
+            .main .secondBlock .SB_1 .call_to_action .image_call .head_call:hover:after, .main .secondBlock .SB_1 .call_to_action .image_call .head_call:focus:after {
+              width: 46%; }
     .main .secondBlock .SB_2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      aligin-items: center;
       margin-left: 425px;
       margin-top: 526px;
       position: absolute;
       width: 853px;
       height: 427px;
       background-color: #f6f3ec; }
+      .main .secondBlock .SB_2 .arrow-right_SB_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 427px; }
+      .main .secondBlock .SB_2 .slider_SB {
+        display: flex;
+        flex-direction: row;
+        justify-content: spase-between; }
+      .main .secondBlock .SB_2 .not_gaddot {
+        background-image: url(../images/not_gaddot.png);
+        background-position: center;
+        width: 488px;
+        height: 427px; }
+      .main .secondBlock .SB_2 .recomend {
+        width: 276px;
+        height: 427px;
+        border: 1px solid red; }
+        .main .secondBlock .SB_2 .recomend .head_sb2 {
+          margin-top: 200px;
+          margin-left: -202px;
+          padding-left: 150px;
+          font-size: 22px;
+          color: #4d4d4d;
+          text-transform: uppercase;
+          width: 427px;
+          height: 20px;
+          transform: rotate(90deg); }
+      .main .secondBlock .SB_2 .arrow-left_SB_2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 427px; }
   .main .thirdBlock {
     display: flex;
     flex-direction: row;
