@@ -386,7 +386,6 @@ $slider-height: 464px
 					font:
 						size: 12px
 					color: #bdbbb6	
-					border: 1px solid red
 					margin:
 						left: 20px + 30px
 				.info
@@ -396,7 +395,37 @@ $slider-height: 464px
 						size: 12px
 					margin:
 						top: 22px
-						left: 20px + 30px			 		
+						left: 20px + 30px
+					p 
+						text-align: left
+						margin-top: 30px
+						transition: .9s	
+					a 
+						color: #4d4d4d
+						text-decoration: none
+						text-transform: uppercase
+						font:
+							weight: 400
+
+						&:hover
+							color: $BR_CL
+
+						&:after
+							margin:
+								left: 585px 
+							display: block
+							position: absolute
+							left: 0 
+							width: 0
+							height: 2px
+							background-color: $BR_CL
+							content: ""
+							transition: width 0.3s ease-out	
+
+						&:hover:after,
+						&:focus:after 
+							width: 17%	
+
 				
 			.arrow-left_SB_2
 				display: flex

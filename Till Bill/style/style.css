@@ -301,7 +301,6 @@
           height: 35px;
           font-size: 12px;
           color: #bdbbb6;
-          border: 1px solid red;
           margin-left: 50px; }
         .main .secondBlock .SB_2 .recomend .info {
           width: 216px;
@@ -309,6 +308,29 @@
           font-size: 12px;
           margin-top: 22px;
           margin-left: 50px; }
+          .main .secondBlock .SB_2 .recomend .info p {
+            text-align: left;
+            margin-top: 30px;
+            transition: 0.9s; }
+          .main .secondBlock .SB_2 .recomend .info a {
+            color: #4d4d4d;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 400; }
+            .main .secondBlock .SB_2 .recomend .info a:hover {
+              color: #a7b3b3; }
+            .main .secondBlock .SB_2 .recomend .info a:after {
+              margin-left: 585px;
+              display: block;
+              position: absolute;
+              left: 0;
+              width: 0;
+              height: 2px;
+              background-color: #a7b3b3;
+              content: "";
+              transition: width 0.3s ease-out; }
+            .main .secondBlock .SB_2 .recomend .info a:hover:after, .main .secondBlock .SB_2 .recomend .info a:focus:after {
+              width: 17%; }
       .main .secondBlock .SB_2 .arrow-left_SB_2 {
         display: flex;
         flex-direction: row;
