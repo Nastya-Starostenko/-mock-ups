@@ -291,11 +291,15 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          width: 35px;
-          height: 35px;
+          width: 150px;
+          height: 80px;
           font-size: 12px;
           color: #bdbbb6;
           margin-left: 50px; }
+          .main .secondBlock .SB_2 .recomend .stylist_one .rating {
+            display: flex;
+            flex-direction: row;
+            align-items: center; }
         .main .secondBlock .SB_2 .recomend .info {
           width: 216px;
           height: 143px;
@@ -352,7 +356,7 @@
       .main .thirdBlock .TB_2 .input_form {
         width: 425px;
         height: 233px;
-        border: 1px solid green; }
+        border: 1px solid #e6e2e1; }
         .main .thirdBlock .TB_2 .input_form h2 {
           margin-top: 30px;
           text-align: center;
@@ -464,20 +468,23 @@
           .main .thirdBlock .TB_2 .slider_TB .stuff_1 img {
             width: 80px;
             height: 5px;
-            margin-bottom: 10px; }
+            margin-bottom: 10px;
+            transition: 0.4s; }
+          .main .thirdBlock .TB_2 .slider_TB .stuff_1:hover .hidden_block {
+            display: flex; }
           .main .thirdBlock .TB_2 .slider_TB .stuff_1 .notBabyDriver {
             width: 144px;
             height: 192px; }
           .main .thirdBlock .TB_2 .slider_TB .stuff_1 .hidden_block {
-            display: flex;
+            display: none;
             flex-direction: row;
             justify-content: flex-start;
             margin-top: 190px;
             position: absolute;
-            width: 212px;
+            width: 210px;
             height: 50px;
             background-color: #fdfcfc;
-            opacity: 0.9; }
+            opacity: 1; }
             .main .thirdBlock .TB_2 .slider_TB .stuff_1 .hidden_block img {
               width: 27px;
               height: 27px;
@@ -529,8 +536,7 @@
     .main .fourthBlock .elem_1 {
       width: 213px;
       height: 320px;
-      text-align: center;
-      border: 1px solid red; }
+      text-align: center; }
       .main .fourthBlock .elem_1 h2 {
         font-size: 14px;
         text-align: center;
@@ -540,17 +546,381 @@
         width: 70px;
         height: 5px; }
       .main .fourthBlock .elem_1 p {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 10px;
         padding: 10px; }
+      .main .fourthBlock .elem_1 .button_two {
+        width: 180px;
+        height: 32px;
+        background-color: #a7b3b3;
+        margin-top: 41px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center; }
+        .main .fourthBlock .elem_1 .button_two a {
+          text-decoration: none;
+          outline: none;
+          display: inline-block;
+          width: 180px;
+          height: 36px;
+          position: relative;
+          color: #ffffff;
+          text-transform: uppercase;
+          font-size: 14px;
+          padding: 10px; }
+          .main .fourthBlock .elem_1 .button_two a:before, .main .fourthBlock .elem_1 .button_two a:after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            opacity: 0; }
+          .main .fourthBlock .elem_1 .button_two a:before {
+            bottom: 0;
+            left: 0;
+            border-left: 1px solid white;
+            border-top: 1px solid white;
+            transition: 0s ease opacity 0.9s, 0.2s ease width 0.4s, 0.2s ease height 0.6s; }
+          .main .fourthBlock .elem_1 .button_two a:after {
+            top: 0;
+            right: 0;
+            left: 0;
+            border-right: 1px solid white;
+            border-bottom: 1px solid white;
+            transition: 0s ease opacity 0.9s, 0.2s ease width, 0.2s ease height 0.2s; }
+          .main .fourthBlock .elem_1 .button_two a:hover:before, .main .fourthBlock .elem_1 .button_two a:hover:after {
+            width: 180px;
+            height: 34px;
+            opacity: 1; }
+          .main .fourthBlock .elem_1 .button_two a:hover:before {
+            transition: 0s ease opacity 0s, 0.2s ease height, 0.2s ease width 0.2s; }
+          .main .fourthBlock .elem_1 .button_two a:hover:after {
+            transition: 0s ease opacity 0.4s, 0.2s ease height 0.4s, 0.2s ease width 0.6s;
+            background: rgba(255, 255, 255, 0.4); }
+      .main .fourthBlock .elem_1 .input_form_two {
+        width: 180px;
+        height: 32px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1px solid black;
+        text-align: left;
+        padding: 5px;
+        font-size: 14px; }
+      .main .fourthBlock .elem_1 .slider_FB {
+        margin-top: 62px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center; }
+        .main .fourthBlock .elem_1 .slider_FB .right_arrow {
+          width: 16px;
+          height: 16px;
+          border: 2px solid #afb1b3;
+          transform: rotate(45deg); }
+          .main .fourthBlock .elem_1 .slider_FB .right_arrow img {
+            width: 8px;
+            height: 8px;
+            margin-bottom: 4px;
+            margin-right: 4px;
+            margin-left: 2px;
+            transform: rotate(-45deg); }
+        .main .fourthBlock .elem_1 .slider_FB .slider_span {
+          width: 150px;
+          height: 7px;
+          display: flex;
+          flex-direction: row;
+          align-items: center; }
+          .main .fourthBlock .elem_1 .slider_FB .slider_span .slide {
+            text-decoration: none;
+            width: 4px;
+            height: 1px;
+            margin: 3px;
+            background-color: #8a8a8a; }
+        .main .fourthBlock .elem_1 .slider_FB .left_arrow {
+          width: 16px;
+          height: 16px;
+          background-color: #474747;
+          border: 2px solid #474747;
+          transform: rotate(45deg); }
+          .main .fourthBlock .elem_1 .slider_FB .left_arrow img {
+            width: 8px;
+            height: 8px;
+            margin-bottom: 4px;
+            margin-right: 4px;
+            margin-left: 2px;
+            transform: rotate(-45deg); }
     .main .fourthBlock .elem_2, .main .fourthBlock .elem_3, .main .fourthBlock .elem_4 {
       width: 281px;
-      height: 320px;
-      border: 1px solid green; }
+      height: 320px; }
+    .main .fourthBlock .elem_2 {
+      background-color: #ffffff;
+      padding: 7px; }
+      .main .fourthBlock .elem_2 .elem_2_inner {
+        display: flex;
+        flex-direction: row;
+        width: 265px;
+        height: 303px; }
+        .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 60px;
+          height: 300px; }
+          .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_11 {
+            width: 58px;
+            height: 245px;
+            border-top: 1px solid #f3f3f3;
+            border-left: 1px solid #f3f3f3;
+            border-bottom: 1px solid #f3f3f3; }
+            .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_11 .new {
+              width: 30px;
+              height: 30px;
+              background-color: #474747;
+              padding-top: 8px;
+              padding-bottom: 10px;
+              padding-left: 4px;
+              transform: rotate(45deg);
+              margin-top: 15px;
+              margin-left: 13px; }
+              .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_11 .new p {
+                transform: rotate(-45deg);
+                text-transform: uppercase;
+                font-size: 10px;
+                color: #ffffff; }
+            .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_11 .colors {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+              margin-top: 103px;
+              margin-left: 10px;
+              width: 41px;
+              height: 90px; }
+              .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_11 .colors .soft {
+                width: 15px;
+                height: 15px;
+                background-color: #838383;
+                transform: rotate(45deg); }
+              .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_11 .colors .red {
+                width: 15px;
+                height: 15px;
+                background-color: #804a43;
+                transform: rotate(45deg); }
+              .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_11 .colors .blue {
+                width: 15px;
+                height: 15px;
+                background-color: #435c80;
+                transform: rotate(45deg); }
+          .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_12 {
+            width: 50px;
+            height: 50px; }
+            .main .fourthBlock .elem_2 .elem_2_inner .elem_2_block_1 .elem_2_block_12 .price {
+              padding-top: 20px;
+              padding-bottom: 15px;
+              padding-left: 15px;
+              padding-right: 15px;
+              font-size: 12px;
+              width: 58px;
+              height: 50px;
+              border: 1px solid #f3f3f3; }
+      .main .fourthBlock .elem_2 .suff_desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .main .fourthBlock .elem_2 .suff_desc .stuff_3 {
+          border-top: 1px solid #f3f3f3;
+          border-bottom: 1px solid #f3f3f3;
+          border-right: 1px solid #f3f3f3;
+          width: 207px;
+          height: 245px;
+          background-image: url(../images/stuff_3.png);
+          background-repeat: no-repeat;
+          background-position: center; }
+        .main .fourthBlock .elem_2 .suff_desc .desc {
+          border: 1px solid #f3f3f3;
+          width: 200px;
+          height: 50px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          margin-left: 7px;
+          margin-bottom: 3px; }
+          .main .fourthBlock .elem_2 .suff_desc .desc p {
+            font-size: 12px; }
+      .main .fourthBlock .elem_2:hover .over {
+        display: flex; }
+      .main .fourthBlock .elem_2 .over {
+        display: none;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 251px;
+        margin-left: 8px;
+        position: absolute;
+        width: 198px;
+        height: 48px;
+        background-color: #ffffff; }
+        .main .fourthBlock .elem_2 .over .icon_1, .main .fourthBlock .elem_2 .over .icon_2, .main .fourthBlock .elem_2 .over .icon_3 {
+          transform: rotate(45deg);
+          padding: 5px;
+          width: 22px;
+          height: 22px;
+          background-color: #474747; }
+          .main .fourthBlock .elem_2 .over .icon_1 img, .main .fourthBlock .elem_2 .over .icon_2 img, .main .fourthBlock .elem_2 .over .icon_3 img {
+            padding-bottom: 7px;
+            padding-left: 3px;
+            padding-right: 1px;
+            transform: rotate(-45deg); }
+    .main .fourthBlock .elem_3 {
+      background-color: #ffffff;
+      padding: 7px; }
+      .main .fourthBlock .elem_3 .stuff_4 {
+        border: 1px solid #f3f3f3;
+        width: 265px;
+        height: 245px;
+        background-image: url(../images/tylers-bag.png);
+        background-repeat: no-repeat;
+        background-position: center; }
+        .main .fourthBlock .elem_3 .stuff_4 .new {
+          width: 30px;
+          height: 30px;
+          background-color: #474747;
+          padding-top: 8px;
+          padding-bottom: 10px;
+          padding-left: 4px;
+          transform: rotate(45deg);
+          margin-top: 18px;
+          margin-left: 13px; }
+          .main .fourthBlock .elem_3 .stuff_4 .new p {
+            transform: rotate(-45deg);
+            text-transform: uppercase;
+            font-size: 10px;
+            color: #ffffff; }
+      .main .fourthBlock .elem_3 .bottom {
+        display: flex;
+        fle-direction: row; }
+        .main .fourthBlock .elem_3 .bottom:hover .over {
+          display: flex; }
+        .main .fourthBlock .elem_3 .bottom .price {
+          padding-top: 20px;
+          padding-bottom: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-top: 6px;
+          font-size: 12px;
+          width: 58px;
+          height: 50px;
+          border: 1px solid #f3f3f3; }
+        .main .fourthBlock .elem_3 .bottom .desc {
+          border: 1px solid #f3f3f3;
+          width: 200px;
+          height: 50px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          margin-left: 7px;
+          margin-top: 6px; }
+          .main .fourthBlock .elem_3 .bottom .desc p {
+            font-size: 12px; }
+        .main .fourthBlock .elem_3 .bottom .over {
+          display: none;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 7px;
+          margin-left: 66px;
+          position: absolute;
+          width: 198px;
+          height: 48px;
+          background-color: #ffffff; }
+          .main .fourthBlock .elem_3 .bottom .over .icon_1, .main .fourthBlock .elem_3 .bottom .over .icon_2, .main .fourthBlock .elem_3 .bottom .over .icon_3 {
+            transform: rotate(45deg);
+            padding: 5px;
+            width: 22px;
+            height: 22px;
+            background-color: #474747; }
+          .main .fourthBlock .elem_3 .bottom .over img {
+            padding-bottom: 7px;
+            padding-left: 3px;
+            padding-right: 1px;
+            transform: rotate(-45deg); }
+    .main .fourthBlock .elem_4 {
+      background-color: #ffffff;
+      padding: 8px; }
+      .main .fourthBlock .elem_4 .phoof {
+        width: 265px;
+        height: 245px;
+        background-image: url(../images/watch_tylers.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        border: 1px solid #f3f3f3; }
+        .main .fourthBlock .elem_4 .phoof .new {
+          width: 30px;
+          height: 30px;
+          background-color: #474747;
+          padding-top: 8px;
+          padding-bottom: 10px;
+          padding-left: 4px;
+          transform: rotate(45deg);
+          margin-top: 18px;
+          margin-left: 13px; }
+          .main .fourthBlock .elem_4 .phoof .new p {
+            transform: rotate(-45deg);
+            text-transform: uppercase;
+            font-size: 10px;
+            color: #ffffff; }
+      .main .fourthBlock .elem_4 .bottom {
+        display: flex;
+        fle-direction: row; }
+        .main .fourthBlock .elem_4 .bottom .price {
+          padding-top: 20px;
+          padding-bottom: 15px;
+          padding-left: 15px;
+          padding-right: 15px;
+          margin-top: 6px;
+          font-size: 12px;
+          width: 58px;
+          height: 50px;
+          border: 1px solid #f3f3f3; }
+        .main .fourthBlock .elem_4 .bottom .desc {
+          border: 1px solid #f3f3f3;
+          width: 200px;
+          height: 50px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          padding-left: 40px;
+          margin-left: 7px;
+          margin-top: 6px; }
+          .main .fourthBlock .elem_4 .bottom .desc p {
+            font-size: 12px; }
+        .main .fourthBlock .elem_4 .bottom:hover .over {
+          display: flex; }
+        .main .fourthBlock .elem_4 .bottom .over {
+          display: none;
+          flex-direction: row;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 7px;
+          margin-left: 66px;
+          position: absolute;
+          width: 198px;
+          height: 48px;
+          background-color: #ffffff; }
+          .main .fourthBlock .elem_4 .bottom .over .icon_1, .main .fourthBlock .elem_4 .bottom .over .icon_2, .main .fourthBlock .elem_4 .bottom .over .icon_3 {
+            transform: rotate(45deg);
+            padding: 5px;
+            width: 22px;
+            height: 22px;
+            background-color: #474747; }
+            .main .fourthBlock .elem_4 .bottom .over .icon_1 img, .main .fourthBlock .elem_4 .bottom .over .icon_2 img, .main .fourthBlock .elem_4 .bottom .over .icon_3 img {
+              padding-bottom: 7px;
+              padding-left: 3px;
+              padding-right: 1px;
+              transform: rotate(-45deg); }
   .main .footer {
+    display: block;
     margin-left: 42px;
     width: 1277px;
     height: 336px;
-    background-color: red; }
+    background-color: #f3f3f3; }
 
 /*# sourceMappingURL=style.css.map */
