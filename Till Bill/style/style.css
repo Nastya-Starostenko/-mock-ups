@@ -255,12 +255,12 @@
           padding-left: 28px; }
   .main .baby_driver {
     width: 568px;
-    height: 470px;
+    height: 480px;
     margin-top: -390px;
     margin-left: 667px;
     background-image: url(../images/babydriver.png);
     background-repeat: no-repeat;
-    background-position: 56% 14%; }
+    background-position: 56% 15%; }
   .main .secondBlock {
     margin-left: 42px;
     width: 1283px;
@@ -390,6 +390,9 @@
             margin: 5px; }
           .main .secondBlock .SB_2 .recomend .stylist_one .rating {
             display: flex;
+            flex-direction: row; }
+          .main .secondBlock .SB_2 .recomend .stylist_one .rating {
+            display: flex;
             flex-direction: row;
             align-items: center; }
         .main .secondBlock .SB_2 .recomend .info {
@@ -400,7 +403,9 @@
           margin-left: 50px; }
           .main .secondBlock .SB_2 .recomend .info p {
             text-align: left;
-            margin-top: 30px; }
+            margin-top: 20px; }
+            .main .secondBlock .SB_2 .recomend .info p span {
+              font-weight: bold; }
           .main .secondBlock .SB_2 .recomend .info a {
             color: #4d4d4d;
             text-decoration: none;
@@ -420,7 +425,7 @@
               content: "";
               transition: width 0.3s ease-out; }
             .main .secondBlock .SB_2 .recomend .info a:hover:after, .main .secondBlock .SB_2 .recomend .info a:focus:after {
-              width: 17%; }
+              width: 16%; }
       .main .secondBlock .SB_2 .arrow-left_SB_2 {
         display: flex;
         flex-direction: row;
@@ -467,19 +472,24 @@
             font-size: 12px;
             background-image: url(../images/TB_2.png);
             border: none;
-            width: 177px;
-            height: 28px;
-            background-color: #e3e1e2; }
+            width: 178px;
+            height: 30px;
+            background-color: #e3e1e2;
+            padding: 3px; }
         .main .thirdBlock .TB_2 .input_form .type_purchase {
           margin-top: 20px;
           margin-right: auto;
           margin-left: auto;
-          padding: 8px;
           width: 180px;
           height: 32px;
           border: 1px solid black; }
-          .main .thirdBlock .TB_2 .input_form .type_purchase p {
-            font-size: 12px; }
+          .main .thirdBlock .TB_2 .input_form .type_purchase input {
+            font-size: 12px;
+            background: url(../image/TB_2.png);
+            border: none;
+            width: 178px;
+            height: 30px;
+            padding: 3px; }
         .main .thirdBlock .TB_2 .input_form .button {
           width: 180px;
           height: 32px;
@@ -595,7 +605,6 @@
               .main .thirdBlock .TB_2 .slider_TB .stuff_1 .hidden_block .made_J p {
                 font-size: 12px; }
               .main .thirdBlock .TB_2 .slider_TB .stuff_1 .hidden_block .made_J .stars {
-                border: 1px solid red;
                 width: 74px;
                 height: 12px;
                 display: flex;
@@ -604,11 +613,13 @@
                 .main .thirdBlock .TB_2 .slider_TB .stuff_1 .hidden_block .made_J .stars img:first-child {
                   width: 58px;
                   height: 12px;
-                  border-radius: 0%; }
+                  border-radius: 0%;
+                  margin: 1px; }
                 .main .thirdBlock .TB_2 .slider_TB .stuff_1 .hidden_block .made_J .stars img:nth-child(2) {
                   width: 31px;
                   height: 12px;
-                  border-radius: 0%; }
+                  border-radius: 0%;
+                  margin: 1px; }
         .main .thirdBlock .TB_2 .slider_TB .stuff_2 {
           display: flex;
           flex-direction: column;
@@ -659,6 +670,22 @@
               margin-bottom: 10px; }
               .main .thirdBlock .TB_2 .slider_TB .stuff_2 .hidden_block .made_J p {
                 font-size: 12px; }
+              .main .thirdBlock .TB_2 .slider_TB .stuff_2 .hidden_block .made_J .stars {
+                width: 74px;
+                height: 12px;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start; }
+              .main .thirdBlock .TB_2 .slider_TB .stuff_2 .hidden_block .made_J img:first-child {
+                width: 58px;
+                height: 12px;
+                border-radius: 0%;
+                margin: 1px; }
+              .main .thirdBlock .TB_2 .slider_TB .stuff_2 .hidden_block .made_J img:nth-child(2) {
+                width: 31px;
+                height: 12px;
+                border-radius: 0%;
+                margin: 1px; }
   .main .fourthBlock {
     display: flex;
     flex-direction: row;
@@ -740,8 +767,13 @@
         margin-right: auto;
         border: 1px solid black;
         text-align: left;
-        padding: 5px;
         font-size: 14px; }
+        .main .fourthBlock .elem_1 .input_form_two select {
+          padding: 5px;
+          width: 177px;
+          height: 30px;
+          background-color: #e7ecf0;
+          border: none; }
       .main .fourthBlock .elem_1 .slider_FB {
         margin-top: 62px;
         display: flex;

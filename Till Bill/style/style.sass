@@ -315,13 +315,13 @@ $slider-height: 464px
 					padding-left: 28px
 	.baby_driver
 		width: 568px
-		height: 470px
+		height: 480px
 		margin:
 			top: -390px
 			left: 667px
 		background-image: url(../images/babydriver.png)	
 		background-repeat: no-repeat
-		background-position: 56% 14%
+		background-position: 56% 15%
 
 
 	.secondBlock
@@ -484,7 +484,10 @@ $slider-height: 464px
 					margin:
 						left: 20px + 30px
 					p 
-						margin: 5px	
+						margin: 5px
+					.rating
+						display: flex
+						flex-direction: row			
 
 					.rating
 						display: flex
@@ -502,7 +505,9 @@ $slider-height: 464px
 						left: 20px + 30px
 					p 
 						text-align: left
-						margin-top: 30px
+						margin-top: 20px
+						span
+							font-weight: bold	
 						
 					a 
 						color: #4d4d4d
@@ -530,7 +535,7 @@ $slider-height: 464px
 
 						&:hover:after,
 						&:focus:after 
-							width: 17%	
+							width: 16%	
 				
 			.arrow-left_SB_2
 				display: flex
@@ -587,12 +592,12 @@ $slider-height: 464px
 					select
 						font:
 							size: 12px
-
 						background-image: url(../images/TB_2.png)
 						border: none
-						width: 177px
-						height: 28px
+						width: 178px
+						height: 30px
 						background-color: #e3e1e2
+						padding: 3px
 
 
 
@@ -601,13 +606,18 @@ $slider-height: 464px
 						top: 20px
 						right: auto
 						left: auto
-					padding: 8px	
+					// padding: 6px	
 					width: 180px
 					height: 32px
 					border: 1px solid black
-					p
+					input
 						font:
 							size: 12px
+						background: url(../image/TB_2.png)
+						border: none
+						width: 178px
+						height: 30px
+						padding: 3px
 				.button 
 					width: 180px
 					height: 32px
@@ -740,7 +750,6 @@ $slider-height: 464px
 								font:
 									size: 12px
 							.stars
-								border: 1px solid red
 								width: 74px
 								height: 12px
 								display: flex
@@ -750,10 +759,12 @@ $slider-height: 464px
 									width: 58px
 									height: 12px
 									border-radius: 0%
+									margin: 1px
 								img:nth-child(2)
 									width: 31px
 									height: 12px
-									border-radius: 0% 		
+									border-radius: 0%
+									margin: 1px 		
 
 
 				.stuff_2
@@ -815,7 +826,23 @@ $slider-height: 464px
 								bottom: 10px
 							p 
 								font:
-									size: 12px					
+									size: 12px
+							.stars
+								width: 74px
+								height: 12px
+								display: flex
+								flex-direction: row
+								justify-content: flex-start
+							img:first-child
+								width: 58px
+								height: 12px
+								border-radius: 0%
+								margin: 1px
+							img:nth-child(2)
+								width: 31px
+								height: 12px
+								border-radius: 0%
+								margin: 1px 								
 	.fourthBlock
 		display: flex
 		flex-direction: row
@@ -906,9 +933,14 @@ $slider-height: 464px
 					right: auto
 				border: 1px solid black
 				text-align: left
-				padding: 5px
 				font: 
 					size: 14px
+				select
+					padding: 5px
+					width: 177px
+					height: 30px
+					background-color: #e7ecf0
+					border: none 	
 			.slider_FB
 				margin:
 					top: 62px
