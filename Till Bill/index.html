@@ -60,10 +60,59 @@
 
 						<div class="gadot-div"></div>
 						<span class="line-gadot-div"></span>
-
+						<h2>Made bu Jany</h2>
+							<div class="rating">
+								<select  class="rating_stars" id="example" name="rating" autocomplete="off">
+	                  				<option value="1">1</option>
+	                  				<option value="2">1</option>
+	                  				<option value="3">1</option>
+									<option value="4">4</option>
+	                  				<option value="5">5</option>
+	                			</select>
+	                		</div>
+							
+					</div>
+				</div>
+				<div class="block_cont">
+					<div class="title">
+						<h2>Thank you, John for using our TaxFree4U service!</h2>
+						<img src="images/divider_SB_2.png">
+						<p>Here’s some items you might like</p>
+						<a href="#">See all my looks</a>
+					</div>
+					<div class="prices">
+						<div class="price_1">
+							<div class="price_1_inner">
+								<p class="text_b">500$</p>
+								<span></span>
+								<p class="text-d">Trousers</p>
+							</div>
+						</div>
+						<div class="price_2">
+							<div class="price_2_inner">
+								<p class="text_b">1 370 $</p>
+								<span></span>
+								<p class="text-d">Jacket</p>
+							</div>
+						</div>
+						<div class="price_3">
+							<div class="price_2_inner">
+								<p class="text_b">900 $</p>
+								<span></span>
+								<p class="text-d">Shoes</p>
+							</div>
+						</div>
+						<div class="price_4">
+							<div class="price_2_inner">
+								<p class="text_b">230 $</p>
+								<span></span>
+								<p class="text-d">Shirt</p>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>					
+		<div class="baby_driver"></div>	
 		</div>
 
 		<div class="secondBlock">
@@ -92,18 +141,15 @@
 									<img src="images/divider_SB_2.png">
 								</h2>
 								<div class="stylist_one">
-									<p>Stylist
-									</p>
-<!-- 									<div class="rating"> -->
+										<p>Stylist</p>
+<!-- 										<select id="example">
+							  				<option value="1">1</option>
+							  				<option value="2">2</option>
+							  				<option value="3">3</option>
+							  				<option value="4">4</option>
+							  				<option value="5">5</option>
+										</select> -->
 										<p>Bloger</p>
-<!-- 										<select  class="rating_stars" id="example" name="rating" autocomplete="off">
-	                  							<option value="1">1</option>
-	                  							<option value="2">1</option>
-	                  							<option value="3">1</option>
-												<option value="4">4</option>
-	                  							<option value="5">5</option>
-	                						</select -->
-<!--                 					</div>	 -->
 
 								</div>
 								<div class="info">
@@ -127,7 +173,11 @@
 						<h2>Refund calculator</h2>
 						<img src="images/divider_SB_2.png">
 						<div class="select_country">
-							<p>Select country</p>
+							<select>
+								<option selected>Select country</option>
+								<option>Select country</option>
+								<option>Select country</option>
+							</select>	
 						</div>
 						<div class="type_purchase">
 							<p>Type purchase</p>
@@ -149,6 +199,10 @@
 									<img src="images/not_gaddot_2.png">
 									<div class="made_J">
 										<p>Made bu Jennifer</p>
+										<div class="stars">
+											<img src="images/stars.png">
+											<img src="images/stars_fill.png">
+										</div>
 									</div>
 								</div>
 							</div>
@@ -377,7 +431,7 @@
 <script type="text/javascript">
    $(function() {
       $('#example').barrating({
-        theme: 'css-stars'
+        theme: 'css-stars',
 
       });
    });
