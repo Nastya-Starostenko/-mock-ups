@@ -347,13 +347,13 @@
         height: 427px; }
       .main .secondBlock .SB_2 .slider_SB {
         display: flex;
-        flex-direction: row;
-        justify-content: spase-between; }
+        flex-direction: row; }
       .main .secondBlock .SB_2 .not_gaddot {
         background-image: url(../images/not_gaddot.png);
         background-position: center;
+        background-repeat: no-repeat;
         width: 488px;
-        height: 430px; }
+        height: 431px; }
       .main .secondBlock .SB_2 .recomend {
         width: 276px;
         height: 427px; }
