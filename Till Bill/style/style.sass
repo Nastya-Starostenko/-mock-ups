@@ -655,10 +655,39 @@ $slider-height: 464px
 						height: 5px
 						margin-bottom: 10px
 
+					&:hover .hidden_block
+						display: flex
+
 					.horseInCoat
 						width: 120px
 						height: 168px
-						margin: auto		
+						margin: auto
+					.hidden_block
+						display: none
+						flex-direction: row
+						justify-content: flex-start
+						margin-top: 240px - 50px
+						position: absolute
+						width: 210px
+						height: 50px
+						background-color: #fdfcfc
+						opacity: 1
+						img
+							width: 27px
+							height: 27px
+							border-radius: 50%
+							margin:
+								top: 10px
+								left: 20px
+								right: 20px
+								bottom: 10px
+						.made_J
+							margin: 
+								top: 15px
+								bottom: 10px
+							p 
+								font:
+									size: 12px					
 	.fourthBlock
 		display: flex
 		flex-direction: row
@@ -692,7 +721,7 @@ $slider-height: 464px
 				padding: 10px
 			.button_two
 				width: 180px
-				height: 32px
+				height: 34px
 				background-color: #a7b3b3
 				margin:
 					top: 41px
@@ -704,7 +733,7 @@ $slider-height: 464px
 					outline: none
 					display: inline-block
 					width: 180px
-					height: 36px
+					height: 34px
 					position: relative
 					color: #ffffff	
 					text-transform: uppercase
@@ -1117,4 +1146,203 @@ $slider-height: 464px
 			left: 42px
 		width: 1277px
 		height: 336px
-		background-color: #f3f3f3	 								
+		background-color: #d4dde4
+		.logo-footer
+			width: 1276px
+			height: 139px
+			background-image: url(../images/logo-footer.png)
+			background-repeat: no-repeat
+			background-position: center
+			border:
+				bottom: 1px solid #ffffff
+		.menu_footer
+
+			display: flex
+			flex-direction: row
+			justify-content: space-around
+			width: 1276px
+			height: 198px	
+			.block_1
+				background-image: url(../images/app_store.png)
+				background-repeat: no-repeat
+				background-position: 45% 30%
+				width: 166px
+				height: 110px
+				padding:
+					top: 67px
+					right: 5px
+					left: 7px
+				margin:
+					top: 18px
+					left: 15px
+					right: (80px)*2
+				a 
+					text-decoration: none
+					color: #474747
+					font:
+						size: 12px
+					padding-left: 5px	
+					text-decoration: underline						 								
+					span
+						text-transform: uppercase
+			.block_2
+				display: flex
+				flex-direction: row
+				justify-content: space-between 
+				width: 440px
+				height: 141px
+				.nav
+					display: flex
+					flex-direction: column
+					width: 140px
+					height: 141px	
+					list-style: none 
+					padding:
+						top:  27px			
+
+					li
+						display: inline
+						padding: 1px
+
+					a	
+						cursor: pointer
+						position: relative
+						text-decoration: none
+						color: #070707
+						text-transform: uppercase
+						font:
+							size: 10px
+							weight: 400
+						line-height: 3px
+						letter-spacing: 1.1px
+						transition: .9s
+
+						&:hover
+							color: $BR_CL
+
+						&:after 
+							display: block
+							position: absolute
+							left: 0 
+							width: 0
+							height: 2px
+							background-color: $BR_CL
+							content: ""
+							transition: width 0.3s ease-out	
+
+						&:hover:after,
+						&:focus:after 
+							width: 100%
+				.nav_2
+					display: flex
+					flex-direction: column
+					width: 154px
+					height: 141px
+					list-style: none 
+					padding:
+						top:  27px		
+
+					li
+						display: inline
+						padding: 1px
+
+						a	
+							cursor: pointer
+							position: relative
+							text-decoration: none
+							color: #070707
+							text-transform: uppercase
+							font:
+								size: 10px
+								weight: 400
+							line-height: 3px
+							letter-spacing: 1.1px
+							transition: .9s
+
+							&:hover
+								color: $BR_CL
+
+							&:after 
+								display: block
+								position: absolute
+								left: 0 
+								width: 0
+								height: 2px
+								background-color: $BR_CL
+								content: ""
+								transition: width 0.3s ease-out	
+
+							&:hover:after,
+							&:focus:after 
+								width: 100%					
+			.block_3
+				display: flex
+				flex-direction: column
+				justify-content: space-around
+				width: 211px
+				height: 120px
+				margin-top: 22px 
+
+				h2
+					text-transform: uppercase
+					font:
+						size: 14px
+				.input
+					display: flex
+					flex-direction: row
+					margin-bottom: 20px
+					input
+						width: 131px
+						height: 30px
+						font:
+							size: 16px
+					a 
+						outline: none
+						display: inline-block
+						position: relative
+						width: 80px
+						height: 30px
+						text-decoration: none
+						background-color: #474747
+						color: #f5f5f5
+						padding: 
+							top: 7px
+							bottom: 7px
+							left: 8px
+						&:before, &:after
+							content: ""
+							position: absolute
+							width: 0
+							height: 0
+							opacity: 0
+						&:before
+							bottom: 0
+							left: 0
+							border-left: 1px solid white
+							border-top: 1px solid white
+							transition: 0s ease opacity .9s, .2s ease width .4s, .2s ease height .6s
+						&:after
+							top: 0
+							right: 0
+							left: 0
+							border-right: 1px solid white
+							border-bottom: 1px solid white
+							transition: 0s ease opacity .9s, .2s ease width , .2s ease height .2s
+						&:hover:before,
+						&:hover:after
+							width: 79px
+							height: 29px
+							opacity: 1
+						&:hover:before
+							transition: 0s ease opacity 0s, .2s ease height, .2s ease width .2s
+						&:hover:after
+							transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s
+							background: rgba(255, 255, 255, 0.4) 
+							// rgba потому что нужна прозрачность на кнопке. P.S. Люблю этого дизайнера	
+				.icons
+					display: flex
+					flex-direction: row
+					justify-content: space-between		
+					width: 145px
+					height: 30px
+						
