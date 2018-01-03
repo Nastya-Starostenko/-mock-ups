@@ -5,6 +5,9 @@
 	<link rel="stylesheet" href="js/jquery-bar-rating-master/dist/themes/bootstrap-stars.css">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 	<link rel="stylesheet" href="js/jquery-bar-rating-master/dist/themes/css-stars.css">
+	<link href="js/Skin-video-js-6.2.7/watermark.css" rel="stylesheet">
+	<link href="js/Skin-video-js-6.2.7/video-js.css" rel="stylesheet">
+	 <link rel="stylesheet" href="js/wallop-master/css/wallop.css">
 	<title>Markup</title>
 </head>
 <body>
@@ -26,6 +29,7 @@
 			</ul>
 			<!-- Icons -->
 			<div class="divider">
+				<!-- <a href="fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.eot"></a> -->
 				<div class="up">
 					<a href="#">
 						<div class="ic_search">
@@ -48,11 +52,10 @@
 
 		</header>
 		<div class="slider">
-			<!-- Arrows -->
+			
 			<a href="#"><div class="arrow-right"><img src="images/banner_arrows/arrow_right.png"></div></a>
 			<a href="#"><div class="arrow-left"><img src="images/banner_arrows/arrow_left.png"></div></a>
 
-			<!-- Price-block -->
 			<div class="price">
 				<!-- Biggest block -->
 				<div class="gadot-outer">
@@ -164,6 +167,18 @@
 
 			<div class="thirdBlock">
 				<div class="TB_1">
+					<video id="player" 
+						class="video-js" 
+						controls preload="none" 
+						width="852px" 
+						height="472px" 
+						poster="images/poster.png" 
+						>
+						<source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
+						<source src="http://vjs.zencdn.net/v/oceans.webm" type="video/webm">
+						<source src="http://vjs.zencdn.net/v/oceans.ogv" type="video/ogg">
+					</video>
+					<!-- <iframe src="http://www.youtube.com/embed/6DuLbacUjuY" frameborder="0" allowfullscreen></iframe> -->
 				</div>
 				<div class="TB_2">
 					<div class="input_form">
@@ -420,6 +435,7 @@
 								<a href="#"><img src="images/twitt.png"></a>
 								<a href="#"><img src="images/insta.png"></a>
 							</div>
+
 						</div>
 					</div>
 				</div>	
@@ -440,6 +456,13 @@
 
       });
    });
+</script>
+<script src="js/video-js-6.2.7/video-js.js"></script>
+<script src="js/video-js-6.2.7/watermark.js"></script>
+<script src="js/wallop-master/js/Wallop.min.js"></script>
+<script>
+  var wallopEl = document.querySelector('.Wallop');
+  var slider = new Wallop(wallopEl);
 </script>
 	</body>
 	</html>

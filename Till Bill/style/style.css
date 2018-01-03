@@ -1,3 +1,12 @@
+@font-face {
+  font-family: "PF Din Text Cond Pro";
+  src: url("../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.eot");
+  src: url("../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.eot?#iefix") format("embedded-opentype");
+  src: url("../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.woff2") format("woff2");
+  src: url("../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.woff") format("woff");
+  src: url("../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +16,8 @@
   max-width: 1366px;
   margin: auto;
   margin-bottom: 42px; }
+  .main p, .main h2, .main li, .main select, .main input {
+    font-family: "PF Din Text Cond Pro"; }
   .main header {
     display: inline-flex;
     width: 1366px;
@@ -20,9 +31,9 @@
       z-index: 50; }
     .main header .nav {
       list-style: none;
-      padding-left: 471px;
+      padding-left: 513px;
       padding-top: 27px;
-      padding-right: 214px; }
+      padding-right: 217px; }
       .main header .nav li {
         display: inline;
         padding: 10px; }
@@ -32,7 +43,7 @@
           text-decoration: none;
           color: #070707;
           text-transform: uppercase;
-          font-size: 10px;
+          font-size: 12px;
           font-weight: 400;
           line-height: 3px;
           letter-spacing: 1.1px;
@@ -166,8 +177,8 @@
       transform: rotate(135deg);
       background: #d4dde4; }
     .main .gadot-inner h2 {
-      margin-right: 25px;
-      margin-left: 65px;
+      margin-right: 30px;
+      margin-left: 75px;
       transform: rotate(-45deg);
       font-size: 14px;
       color: #ffffff; }
@@ -202,7 +213,8 @@
       text-align: center; }
       .main .block_cont .title h2 {
         font-size: 16px;
-        color: #ffffff; }
+        color: #ffffff;
+        text-transform: uppercase; }
       .main .block_cont .title img {
         margin: 5px; }
       .main .block_cont .title p {
@@ -299,6 +311,7 @@
               color: #f4f5f5;
               text-transform: uppercase; }
             .main .secondBlock .SB_1 .call_to_action .image_call .head_call p {
+              font-family: none;
               font-size: 14px;
               color: #f4f5f5; }
             .main .secondBlock .SB_1 .call_to_action .image_call .head_call a {
@@ -312,6 +325,7 @@
               transition: 0.9s;
               line-height: 3px; }
               .main .secondBlock .SB_1 .call_to_action .image_call .head_call a .start {
+                font-family: none;
                 height: 10px;
                 width: 115px;
                 margin-left: 65px;
@@ -425,7 +439,7 @@
               content: "";
               transition: width 0.3s ease-out; }
             .main .secondBlock .SB_2 .recomend .info a:hover:after, .main .secondBlock .SB_2 .recomend .info a:focus:after {
-              width: 16%; }
+              width: 98px; }
       .main .secondBlock .SB_2 .arrow-left_SB_2 {
         display: flex;
         flex-direction: row;
@@ -445,6 +459,9 @@
       width: 852px;
       height: 472px;
       background-color: #756862; }
+      .main .thirdBlock .TB_1 .video-js {
+        width: 852px;
+        height: 472px; }
     .main .thirdBlock .TB_2 {
       margin-top: 526px;
       width: 425px;
@@ -1118,8 +1135,8 @@
         .main .footer .menu_footer .block_1 a {
           text-decoration: none;
           color: #474747;
-          font-size: 12px;
-          padding-left: 5px;
+          font-size: 15px;
+          padding-left: 8px;
           text-decoration: underline; }
           .main .footer .menu_footer .block_1 a span {
             text-transform: uppercase; }

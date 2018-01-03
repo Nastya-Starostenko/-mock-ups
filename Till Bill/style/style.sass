@@ -10,6 +10,20 @@ $logo-height: 92px
 $slider-width: 1277px
 $slider-height: 464px
 
+@font-face 
+	font-family: 'PF Din Text Cond Pro'
+	src: url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.eot')
+	src: url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype')
+	src: url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.woff2') format('woff2')
+	src: url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.woff') format('woff')
+	src: url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.ttf') format('truetype')
+	font-weight: normal
+	font-style: normal
+
+ 
+
+
+
 *
 	margin: 0
 	padding: 0
@@ -19,12 +33,16 @@ $slider-height: 464px
 	max-width: 1366px
 	margin: auto
 	margin-bottom: 42px
+	p, h2, li, select, input
+		font:
+			family: 'PF Din Text Cond Pro'
+
 
 	header
 		display: inline-flex
 		width: $header-width
 		height: $header-height
-		background-color: $BG_CH
+		background-color: #ffffff
 		position: absolute	 
 
 		.logo-header
@@ -35,9 +53,9 @@ $slider-height: 464px
 		.nav	
 			list-style: none 
 			padding:
-				left: 471px
+				left: 513px
 				top:  27px
-				right: 214px		
+				right: 217px		
 
 			li
 				display: inline
@@ -50,7 +68,7 @@ $slider-height: 464px
 					color: #070707
 					text-transform: uppercase
 					font:
-						size: 10px
+						size: 12px
 						weight: 400
 					line-height: 3px
 					letter-spacing: 1.1px
@@ -142,6 +160,7 @@ $slider-height: 464px
 		padding-bottom: 40px 	
 		background-color: #a7b3b3
 		position: absolute
+	
 		
 	.arrow-right
 		display: flex
@@ -213,8 +232,9 @@ $slider-height: 464px
 			background: #d4dde4
 		h2 
 			margin:
-				right: 25px
-				left: 65px
+				right: 30px
+				left: 75px
+			// text-transform: uppercase	
 			transform: rotate(-45deg)
 			font:
 				size: 14px
@@ -256,6 +276,7 @@ $slider-height: 464px
 				font:
 					size: 16px
 				color: #ffffff
+				text-transform: uppercase
 			img
 				margin: 5px
 			p 
@@ -377,6 +398,7 @@ $slider-height: 464px
 
 						p
 							font:
+								family: none
 								size: 14px
 							color: #f4f5f5
 							
@@ -393,7 +415,9 @@ $slider-height: 464px
 							transition: .9s
 							line-height: 3px
 
-							.start	
+							.start
+								font:
+									family: none	
 								height: 10px
 								width: 115px
 								margin:
@@ -535,7 +559,7 @@ $slider-height: 464px
 
 						&:hover:after,
 						&:focus:after 
-							width: 16%	
+							width: 216px - 118px	
 				
 			.arrow-left_SB_2
 				display: flex
@@ -559,7 +583,10 @@ $slider-height: 464px
 					top: 526px 
 			width: 852px 	
 			height: 472px
-			background-color: #756862				
+			background-color: #756862
+			.video-js
+				width: 852px
+				height: 472px				
 		.TB_2
 			margin:
 					top: 526px
@@ -1340,8 +1367,8 @@ $slider-height: 464px
 					text-decoration: none
 					color: #474747
 					font:
-						size: 12px
-					padding-left: 5px	
+						size: 15px
+					padding-left: 8px	
 					text-decoration: underline						 								
 					span
 						text-transform: uppercase
@@ -1505,4 +1532,5 @@ $slider-height: 464px
 					justify-content: space-between		
 					width: 145px
 					height: 30px
+
 						

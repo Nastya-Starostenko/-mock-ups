@@ -2,11 +2,11 @@
 
 @font-face {
     font-family: 'PF Din Text Cond Pro';
-    src: url('PFDinTextCondPro-Regular.eot');
-    src: url('PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
-        url('PFDinTextCondPro-Regular.woff2') format('woff2'),
-        url('PFDinTextCondPro-Regular.woff') format('woff'),
-        url('PFDinTextCondPro-Regular.ttf') format('truetype');
+    src: url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.eot');
+    src: url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.woff2') format('woff2'),
+        url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.woff') format('woff'),
+        url('../fonts/PF Din Text Cond Pro/PFDinTextCondPro-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
